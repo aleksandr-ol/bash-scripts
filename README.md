@@ -44,6 +44,7 @@ sudo nano /etc/mysql/my.cnf
 default_authentication_plugin= mysql_native_password  
   
 # systemd service
+journalctl -u servicename -f  
 sudo nano /etc/systemd/system/service_name.service  
 [Unit]  
 Description=  
