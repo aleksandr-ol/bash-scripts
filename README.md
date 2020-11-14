@@ -42,3 +42,21 @@ git config --global core.fileMode false
 sudo nano /etc/mysql/my.cnf  
 [mysqld]  
 default_authentication_plugin= mysql_native_password  
+  
+# systemd service
+sudo nano /etc/systemd/system/service_name.service  
+[Unit]  
+Description=  
+After=network.target  
+  
+[Service]  
+Type=simple  
+ExecStart=  
+WorkingDirectory=  
+User=web  
+Group=web  
+Restart=always  
+RestartSec=10  
+  
+[Install]  
+WantedBy=multi-user.target  
