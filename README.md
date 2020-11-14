@@ -8,7 +8,7 @@ options = "metadata,umask=22,fmask=11"
 # Install environment
 sudo add-apt-repository ppa:ondrej/apache2 php  
 sudo apt install php7.4  
-sudo apt install composer 
+sudo apt install composer  
 sudo apt install nginx  
 sudo apt install mysql   
   
