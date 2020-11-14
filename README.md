@@ -32,3 +32,13 @@ or curl -sL https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
 echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list  
 sudo apt-get update  
 sudo apt-get install yarn  
+  
+# Git  
+git config --global credential.helper store  
+git config --global core.autocrlf false  
+git config --global core.fileMode false  
+  
+# Mysql
+sudo nano /etc/mysql/my.cnf  
+[mysqld]  
+default_authentication_plugin= mysql_native_password  
