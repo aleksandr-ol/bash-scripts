@@ -1,11 +1,11 @@
 # bash-scripts
 # WSL  
-/etc/wsl.conf  
+sudo nano /etc/wsl.conf  
 [automount]  
 enabled = true  
 options = "metadata,umask=22,fmask=11"  
   
-/etc/nginx/nginx.conf  
+sudo nano /etc/nginx/nginx.conf  
 fastcgi_buffering off;  for wsl work fast  
 
 # Install php environment
