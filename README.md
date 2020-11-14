@@ -1,5 +1,5 @@
 # bash-scripts
-# -----WSL-----  
+# WSL  
 /etc/wsl.conf  
 [automount]  
 enabled = true  
