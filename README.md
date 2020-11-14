@@ -5,9 +5,9 @@ sudo nano /etc/wsl.conf
 enabled = true  
 options = "metadata,umask=22,fmask=11"  
   
+  for wsl work fast  
 sudo nano /etc/nginx/nginx.conf  
-fastcgi_buffering off;  for wsl work fast  
-
+fastcgi_buffering off;  
 # Install php environment
 sudo add-apt-repository ppa:ondrej/apache2 php  
 sudo apt install php7.4  
