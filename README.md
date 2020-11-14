@@ -60,3 +60,5 @@ RestartSec=10
   
 [Install]  
 WantedBy=multi-user.target  
+  
+sudo systemctl enable your_name && sudo service your_name start;  
