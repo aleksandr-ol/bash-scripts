@@ -1,5 +1,5 @@
 # bash-scripts
------WSL config for properly showing media files-----  
+# -----WSL config for properly showing media files-----  
 ~/etc/wsl.conf  
 [automount]  
 enabled = true  
