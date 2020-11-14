@@ -1,9 +1,12 @@
 # bash-scripts
-# -----WSL config for properly showing media files-----  
+# -----WSL-----  
 /etc/wsl.conf  
 [automount]  
 enabled = true  
 options = "metadata,umask=22,fmask=11"  
+  
+/etc/nginx/nginx.conf  
+fastcgi_buffering off;  for wsl work fast  
 
 # Install php environment
 sudo add-apt-repository ppa:ondrej/apache2 php  
