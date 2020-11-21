@@ -1,5 +1,7 @@
 # bash-scripts
 # WSL  
+dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart  
+Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux  
 sudo nano /etc/wsl.conf  
 [automount]  
 enabled = true  
