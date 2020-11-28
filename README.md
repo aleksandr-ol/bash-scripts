@@ -41,9 +41,14 @@ git config --global core.autocrlf false
 git config --global core.fileMode false  
   
 # Mysql
+sudo nano /etc/apt/sources.list  
+ \# deb http://repo.mysql.com/apt/ubuntu bionic mysql-5.7
+  
 sudo nano /etc/mysql/my.cnf  
 [mysqld]  
 default_authentication_plugin= mysql_native_password  
+  
+CREATE USER 'test_user'@'localhost' IDENTIFIED BY 'password';  
   
 # systemd service
 journalctl -u servicename -f  
