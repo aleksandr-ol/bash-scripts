@@ -49,7 +49,8 @@ sudo nano /etc/mysql/my.cnf
 default_authentication_plugin= mysql_native_password  
   
 CREATE USER 'test_user'@'localhost' IDENTIFIED BY 'password';  
-GRANT ALL PRIVILEGES ON \*.\* TO test_user@localhost;
+GRANT ALL PRIVILEGES ON \*.\* TO test_user@localhost;  
+ALTER USER 'test_user'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password';  
   
 # systemd service
 journalctl -u servicename -f  
