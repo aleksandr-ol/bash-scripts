@@ -72,5 +72,9 @@ RestartSec=10
 WantedBy=multi-user.target  
   
 sudo systemctl enable your_name && sudo service your_name start;  
-# Linux Repo
-https://releases.ubuntu.com/20.04/ubuntu-20.04.1-live-server-amd64.iso
+# Linux Repo and commands
+https://releases.ubuntu.com/20.04/ubuntu-20.04.1-live-server-amd64.iso  
+  
+no password on sudo  
+sudo nano /etc/sudoers.d/filename
+\# username     ALL=(ALL) NOPASSWD:ALL
