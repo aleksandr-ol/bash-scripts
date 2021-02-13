@@ -35,19 +35,19 @@ supervisorctl restart workers:*
 список воркеров гирмана, их статус
 gearadmin --status
 
-просмотр процессов
-supervisorctl status
+просмотр процессов  
+supervisorctl status  
 
-перезапуск воркеров
-supervisorctl restart workers:CategoriesWorker_00 workers:CategoriesWorker_01
+перезапуск воркеров  
+supervisorctl restart workers:CategoriesWorker_00 workers:CategoriesWorker_01  
 
-аналогично перезапуск процессов 
-supervisorctl restart gearman
+аналогично перезапуск процессов  
+supervisorctl restart gearman  
 
-если был измене конфиг супервизора
-supervisorctl update all
+если был измене конфиг супервизора  
+supervisorctl update all  
 
-очистить очередь гирман
+очистить очередь гирман  
 /usr/bin/gearman -t 1000 -n -w -f addAttributes > /dev/null  
   
 # Vue.js env  
