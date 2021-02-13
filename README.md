@@ -24,6 +24,32 @@ sudo -u postgres psql -U postgres
   \# CREATE USER username WITH ENCRYPTED PASSWORD 'put-your-password-here';  
   \# CREATE DATABASE dbname owner username;  
   
+# Phalcon  
+php vendor/bin/phalcon.php migration run --config=config/config_master.yml  
+  
+---TA-DA containers---  
+docker exec -it api_api-prod_1 bash  
+docker exec -it api_mysql-master_1 bash  
+supervisorctl restart workers:*  
+  
+список воркеров гирмана, их статус
+gearadmin --status
+
+просмотр процессов
+supervisorctl status
+
+перезапуск воркеров
+supervisorctl restart workers:CategoriesWorker_00 workers:CategoriesWorker_01
+
+аналогично перезапуск процессов 
+supervisorctl restart gearman
+
+если был измене конфиг супервизора
+supervisorctl update all
+
+очистить очередь гирман
+/usr/bin/gearman -t 1000 -n -w -f addAttributes > /dev/null  
+  
 # Vue.js env  
 sudo apt install nodejs  
 sudo apt install npm  
