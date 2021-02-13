@@ -32,8 +32,8 @@ docker exec -it api_api-prod_1 bash
 docker exec -it api_mysql-master_1 bash  
 supervisorctl restart workers:*  
   
-список воркеров гирмана, их статус
-gearadmin --status
+список воркеров гирмана, их статус  
+gearadmin --status  
 
 просмотр процессов  
 supervisorctl status  
