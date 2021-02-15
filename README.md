@@ -103,4 +103,6 @@ https://releases.ubuntu.com/20.04/ubuntu-20.04.1-live-server-amd64.iso
   
 no password on sudo  
 sudo nano /etc/sudoers.d/filename  
-\# username     ALL=(ALL) NOPASSWD:ALL
+\# username     ALL=(ALL) NOPASSWD:ALL  
+  
+/usr/bin/flock -xn /var/lock/import.lock -c 'sh /root/import.sh'  
