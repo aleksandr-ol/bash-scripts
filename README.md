@@ -66,6 +66,9 @@ git config --global credential.helper store
 git config --global core.autocrlf false  
 git config --global core.fileMode false  
   
+# Golang  
+go tool pprof http://localhost:6060/debug/pprof/heap  
+  
 # Mysql
 sudo nano /etc/apt/sources.list  
  \# deb http://repo.mysql.com/apt/ubuntu bionic mysql-5.7
