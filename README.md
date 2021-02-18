@@ -69,6 +69,11 @@ git config --global core.fileMode false
 # Golang  
 go tool pprof http://localhost:6060/debug/pprof/heap  
   
+import _ "net/http/pprof"  
+go func() {  
+	http.ListenAndServe("localhost:6060", nil)  
+}()  
+  
 # Mysql
 sudo nano /etc/apt/sources.list  
  \# deb http://repo.mysql.com/apt/ubuntu bionic mysql-5.7
