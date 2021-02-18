@@ -68,6 +68,7 @@ git config --global core.fileMode false
   
 # Golang  
 go tool pprof http://localhost:6060/debug/pprof/heap  
+apt install graphviz // for UI  
   
 import _ "net/http/pprof"  
 go func() {  
