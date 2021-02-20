@@ -115,3 +115,11 @@ sudo nano /etc/sudoers.d/filename
 \# username     ALL=(ALL) NOPASSWD:ALL  
   
 /usr/bin/flock -xn /var/lock/import.lock -c 'sh /root/import.sh'  
+  
+sudo apt-get install \  
+    apt-transport-https \  
+    ca-certificates \  
+    curl \  
+    gnupg-agent \  
+    software-properties-common  
+    
