@@ -67,6 +67,8 @@ git config --global core.autocrlf false
 git config --global core.fileMode false  
   
 # Golang  
+packages:  
+go get github.com/gorilla/websocket && go get github.com/isayme/go-amqp-reconnect/rabbitmq && go get github.com/fatih/structs && go get github.com/jmoiron/sqlx && go get github.com/go-sql-driver/mysql
 go tool pprof http://localhost:6060/debug/pprof/heap  
 apt install graphviz // for UI  
   
