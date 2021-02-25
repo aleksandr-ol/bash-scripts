@@ -69,6 +69,11 @@ git config --global credential.helper store
 git config --global core.autocrlf false  
 git config --global core.fileMode false  
   
+nano ~/.ssh/config  
+Host bitbucket.org  
+    Hostname bitbucket.org  
+    IdentityFile ~/.ssh/rsa  
+    IdentitiesOnly yes  
 # Golang  
 packages:  
 go get github.com/gorilla/websocket && go get github.com/isayme/go-amqp-reconnect/rabbitmq && go get github.com/fatih/structs && go get github.com/jmoiron/sqlx && go get github.com/go-sql-driver/mysql  
