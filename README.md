@@ -54,7 +54,7 @@ supervisorctl update all
 sudo apt install nodejs  
 sudo apt install npm  
   
-yarn global add @vue/cli @vue/cli-service-global 
+yarn global add @vue/cli @vue/cli-service-global  
 vue create hello-world  
   
 ---yarn---  
