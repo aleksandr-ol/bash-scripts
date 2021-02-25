@@ -54,6 +54,10 @@ supervisorctl update all
 sudo apt install nodejs  
 sudo apt install npm  
   
+npm install -g @vue/cli  
+//then  
+vue create hello-world  
+  
 ---yarn---  
 curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -  
 or curl -sL https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -  
