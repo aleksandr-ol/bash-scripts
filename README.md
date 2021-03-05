@@ -73,6 +73,8 @@ git config --global credential.helper store
 git config --global core.autocrlf false  
 git config --global core.fileMode false  
   
+git update-index --assume-unchanged filename  
+  
 nano ~/.ssh/config  
 Host bitbucket.org  
     Hostname bitbucket.org  
