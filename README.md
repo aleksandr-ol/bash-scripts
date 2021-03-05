@@ -64,6 +64,10 @@ echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/source
 sudo apt-get update  
 sudo apt-get install yarn  
   
+curl --silent --location https://dl.yarnpkg.com/rpm/yarn.repo | sudo tee /etc/yum.repos.d/yarn.repo  
+sudo rpm --import https://dl.yarnpkg.com/rpm/pubkey.gpg  
+yum install yarn  
+  
 # Git  
 git config --global credential.helper store  
 git config --global core.autocrlf false  
