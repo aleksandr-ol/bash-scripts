@@ -74,6 +74,7 @@ git config --global core.autocrlf false
 git config --global core.fileMode false  
   
 git update-index --assume-unchanged filename  
+ git reset --soft HEAD~  
   
 nano ~/.ssh/config  
 Host bitbucket.org  
