@@ -76,6 +76,9 @@ git config --global core.fileMode false
 git update-index --assume-unchanged filename  
  git reset --soft HEAD~  
   
+git-credential-manager.exe uninstall  
+Run this command in C:\Program Files\Git\mingw64\libexec\git-core  
+  
 nano ~/.ssh/config  
 Host bitbucket.org  
     Hostname bitbucket.org  
