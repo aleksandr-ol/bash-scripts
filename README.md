@@ -143,3 +143,11 @@ sudo apt-get install \
     gnupg-agent \  
     software-properties-common  
     
+---- Clean disk usage commands ------  
+sudo apt-get autoremove  
+sudo du -sh /var/cache/apt  
+sudo apt-get autoclean  
+sudo apt-get clean  
+journalctl --disk-usage
+sudo journalctl --vacuum-time=3d  
+  
