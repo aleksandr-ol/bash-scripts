@@ -151,3 +151,8 @@ sudo apt-get clean
 journalctl --disk-usage
 sudo journalctl --vacuum-time=3d  
   
+wget https://getcomposer.org/composer.phar  
+mv composer.phar /usr/local/bin/composer  
+chmod +x /usr/local/bin/composer  
+chown apache /usr/local/bin/composer  
+  
