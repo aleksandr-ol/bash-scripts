@@ -155,4 +155,6 @@ wget https://getcomposer.org/composer.phar
 mv composer.phar /usr/local/bin/composer  
 chmod +x /usr/local/bin/composer  
 chown apache /usr/local/bin/composer  
+setxkbmap -layout us,ua  
+setxkbmap -option 'grp:alt_shift_toggle'  
   
