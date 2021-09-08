@@ -25,7 +25,8 @@ sudo -u postgres psql -U postgres
   \# CREATE DATABASE dbname owner username;  
   
 # Phalcon  
-php vendor/bin/phalcon.php migration run --config=config/config_master.yml  
+php vendor/bin/phalcon migration run --config=config/config_master.yml  
+php vendor/bin/phalcon migration run  
   
 ---TA-DA containers---  
 docker exec -it api_api-prod_1 bash  
