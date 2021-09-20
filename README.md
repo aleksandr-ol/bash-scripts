@@ -10,6 +10,13 @@ options = "metadata,umask=22,fmask=11"
   for wsl work fast  
 sudo nano /etc/nginx/nginx.conf  
 fastcgi_buffering off;  
+  
+### WSL conf ###  
+.wslconfig file in C:\Users\username  
+[wsl2]  
+memory=6GB # Limits VM memory in WSL 2 to 4 GB  
+processors=6 # Makes the WSL 2 VM use two virtual processors  
+  
 # Install php environment
 sudo add-apt-repository ppa:ondrej/apache2 php  
 sudo apt install php7.4  
