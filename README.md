@@ -56,7 +56,7 @@ supervisorctl restart gearman
 supervisorctl update all  
 
 очистить очередь гирман  
-/usr/bin/gearman -t 1000 -n -w -f addAttributes > /dev/null  
+/usr/bin/gearman -t 1000 -n -w -f indexGoodReindex > /dev/null  
   
 # Vue.js env  
 sudo apt install nodejs  
