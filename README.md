@@ -93,9 +93,9 @@ Host bitbucket.org
     IdentityFile ~/.ssh/rsa  
     IdentitiesOnly yes  
     
-  Host github.com
-    Hostname github.com
-    User git
+  Host github.com  
+    Hostname github.com  
+    User git  
     IdentityFile C:\Users\immortal\.ssh\id_rsa  
 # Golang  
 packages:  
