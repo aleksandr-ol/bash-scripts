@@ -92,6 +92,11 @@ Host bitbucket.org
     Hostname bitbucket.org  
     IdentityFile ~/.ssh/rsa  
     IdentitiesOnly yes  
+    
+  Host github.com
+    Hostname github.com
+    User git
+    IdentityFile C:\Users\immortal\.ssh\id_rsa  
 # Golang  
 packages:  
 go get github.com/gorilla/websocket && go get github.com/isayme/go-amqp-reconnect/rabbitmq && go get github.com/fatih/structs && go get github.com/jmoiron/sqlx && go get github.com/go-sql-driver/mysql && go get github.com/araddon/dateparse && go get github.com/mitchellh/mapstructure  
