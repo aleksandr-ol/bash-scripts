@@ -34,6 +34,7 @@ sudo -u postgres psql -U postgres
 # Phalcon  
 php vendor/bin/phalcon migration run --config=config/config_master.yml  
 php vendor/bin/phalcon migration run  
+php vendor/bin/phalcon model --name=Vacancies --get-set  
   
 ---TA-DA containers---  
 docker exec -it api_api-prod_1 bash  
