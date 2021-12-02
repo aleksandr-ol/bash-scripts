@@ -36,6 +36,8 @@ php vendor/bin/phalcon migration run --config=config/config_master.yml
 php vendor/bin/phalcon migration run  
 php vendor/bin/phalcon model --name=Vacancies --get-set  
   
+docker-compose down && docker network rm app_site_http_network && docker-compose up -d --force-recreate  
+  
 ---TA-DA containers---  
 docker exec -it api_api-prod_1 bash  
 docker exec -it api_mysql-master_1 bash  
