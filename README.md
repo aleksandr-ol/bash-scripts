@@ -63,6 +63,8 @@ supervisorctl update all
 /usr/bin/gearman -t 1000 -n -w -f indexGoodReindex > /dev/null  
   
 # Vue.js env  
+curl -fsSL https://deb.nodesource.com/setup_current.x | sudo -E bash -  
+sudo apt-get install -y nodejs  
 sudo apt install nodejs  
 sudo apt install npm  
   
