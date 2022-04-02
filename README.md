@@ -80,6 +80,16 @@ curl --silent --location https://dl.yarnpkg.com/rpm/yarn.repo | sudo tee /etc/yu
 sudo rpm --import https://dl.yarnpkg.com/rpm/pubkey.gpg  
 yum install yarn  
   
+  
+Use n module from npm in order to upgrade node  
+  
+sudo npm cache clean -f  
+sudo npm install -g n  
+sudo n stable  
+To upgrade to latest version (and not current stable) version, you can use  
+  
+sudo n latest  
+  
 # Git  
 git config --global credential.helper store  
 git config --global core.autocrlf false  
