@@ -187,3 +187,5 @@ chown apache /usr/local/bin/composer
 setxkbmap -layout us,ua  
 setxkbmap -option 'grp:alt_shift_toggle'  
   
+setfacl -d -m o::rwx your/directory/path  
+  
