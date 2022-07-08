@@ -189,3 +189,7 @@ setxkbmap -option 'grp:alt_shift_toggle'
   
 setfacl -d -m o::rwx your/directory/path  
   
+# combine pdfs  
+sudo apt install poppler-utils  
+pdfunite file1.pdf file2.pdf mergedfile.pdf  
+  
