@@ -31,6 +31,16 @@ sudo -u postgres psql -U postgres
   \# CREATE USER username WITH ENCRYPTED PASSWORD 'put-your-password-here';  
   \# CREATE DATABASE dbname owner username;  
   
+Yii assets composer fix
+```
+"repositories": [
+    {
+        "type": "composer",
+        "url": "https://asset-packagist.org"
+    }
+]
+```
+  
 # Phalcon  
 php vendor/bin/phalcon migration run --config=config/config_master.yml  
 php vendor/bin/phalcon migration run  
